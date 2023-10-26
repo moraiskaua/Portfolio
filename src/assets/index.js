@@ -12,6 +12,7 @@ import reactjs from './tech/reactjs.png';
 import nextjs from './tech/nextjs.png';
 import tailwind from './tech/tailwind.png';
 import typescript from './tech/typescript.png';
+import postgres from './tech/postgres.png';
 
 import mma from './company/mma.jpg';
 import savingpets from './company/savingpets.svg';
@@ -31,6 +32,7 @@ export {
   nextjs,
   tailwind,
   typescript,
+  postgres,
   mma,
   savingpets,
   sbm,

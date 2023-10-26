@@ -7,6 +7,7 @@ import {
   nextjs,
   tailwind,
   nodejs,
+  postgres,
   git,
   docker,
   mma,
@@ -50,24 +51,32 @@ const services = [
 
 const technologies = [
   {
-    name: 'JavaScript',
-    icon: javascript,
-  },
-  {
-    name: 'TypeScript',
-    icon: typescript,
+    name: 'Next JS',
+    icon: nextjs,
   },
   {
     name: 'React JS',
     icon: reactjs,
   },
   {
+    name: 'Node JS',
+    icon: nodejs,
+  },
+  {
+    name: 'TypeScript',
+    icon: typescript,
+  },
+  {
+    name: 'JavaScript',
+    icon: javascript,
+  },
+  {
     name: 'Tailwind CSS',
     icon: tailwind,
   },
   {
-    name: 'Node JS',
-    icon: nodejs,
+    name: 'Postgres SQL',
+    icon: postgres,
   },
   {
     name: 'git',
