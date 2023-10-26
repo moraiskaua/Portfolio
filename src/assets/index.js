@@ -15,8 +15,14 @@ import typescript from './tech/typescript.png';
 import postgres from './tech/postgres.png';
 
 import mma from './company/mma.jpg';
-import savingpets from './company/savingpets.svg';
+import savingpetsLogo from './company/savingpets.svg';
 import sbm from './company/sbm.png';
+
+import devlanchar from './project/devlanchar.png';
+import admintemplate from './project/admintemplate.png';
+import quiznext from './project/quiznext.png';
+import clonenetflix from './project/clonenetflix.png';
+import savingpets from './project/savingpets.jpeg';
 
 export {
   logo,
@@ -34,6 +40,11 @@ export {
   typescript,
   postgres,
   mma,
-  savingpets,
+  savingpetsLogo,
   sbm,
+  devlanchar,
+  admintemplate,
+  quiznext,
+  clonenetflix,
+  savingpets,
 };

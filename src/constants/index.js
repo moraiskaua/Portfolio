@@ -11,8 +11,13 @@ import {
   git,
   docker,
   mma,
-  savingpets,
+  savingpetsLogo,
   sbm,
+  devlanchar,
+  admintemplate,
+  quiznext,
+  clonenetflix,
+  savingpets,
 } from '../assets';
 
 export const navLinks = [
@@ -103,7 +108,7 @@ const experiences = [
   {
     title: 'Full-stack Developer',
     company_name: 'Saving Pets',
-    icon: savingpets,
+    icon: savingpetsLogo,
     iconBg: '#000',
     date: 'July 2023 - At the moment',
     points: [
@@ -153,25 +158,96 @@ const testimonials = [
 
 const projects = [
   {
-    name: 'Car Rent',
-    description:
-      'Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.',
+    name: 'Saving Pets',
+    description: 'Web system to help report animal abuse.',
     tags: [
       {
-        name: 'react',
+        name: 'NextJS',
         color: 'blue-text-gradient',
       },
       {
-        name: 'mongodb',
+        name: 'NodeJS',
         color: 'green-text-gradient',
       },
       {
-        name: 'tailwind',
+        name: 'TailwindCSS',
         color: 'pink-text-gradient',
       },
     ],
-    image: mma,
-    source_code_link: 'https://github.com/',
+    image: savingpets,
+    source_code_link: 'https://github.com/moraiskaua/front-end-saving-pets',
+  },
+  {
+    name: 'Dev Lanchar',
+    description: 'Web system to manage a cafeteria.',
+    tags: [
+      {
+        name: 'NextJS',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'NodeJS',
+        color: 'green-text-gradient',
+      },
+      {
+        name: 'TailwindCSS',
+        color: 'pink-text-gradient',
+      },
+    ],
+    image: devlanchar,
+    source_code_link: 'https://github.com/moraiskaua/front-end-devLanchar',
+  },
+  {
+    name: 'Admin Template',
+    description: 'Admin panel example web system.',
+    tags: [
+      {
+        name: 'NextJS',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'Firebase',
+        color: 'green-text-gradient',
+      },
+      {
+        name: 'TailwindCSS',
+        color: 'pink-text-gradient',
+      },
+    ],
+    image: admintemplate,
+    source_code_link: 'https://github.com/moraiskaua/next-adminTemplate',
+  },
+  {
+    name: 'Quiz NextJS',
+    description: 'Quiz about NextJS.',
+    tags: [
+      {
+        name: 'NextJS',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'Typescript',
+        color: 'green-text-gradient',
+      },
+    ],
+    image: quiznext,
+    source_code_link: 'https://github.com/moraiskaua/next-quiz',
+  },
+  {
+    name: 'Netflix Clone',
+    description: 'Netflix home page clone.',
+    tags: [
+      {
+        name: 'ReactJS',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'Typescript',
+        color: 'green-text-gradient',
+      },
+    ],
+    image: clonenetflix,
+    source_code_link: 'https://github.com/moraiskaua/react-netflixClone',
   },
 ];
 
