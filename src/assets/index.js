@@ -14,6 +14,8 @@ import tailwind from './tech/tailwind.png';
 import typescript from './tech/typescript.png';
 
 import mma from './company/mma.jpg';
+import savingpets from './company/savingpets.svg';
+import sbm from './company/sbm.png';
 
 export {
   logo,
@@ -30,4 +32,6 @@ export {
   tailwind,
   typescript,
   mma,
+  savingpets,
+  sbm,
 };

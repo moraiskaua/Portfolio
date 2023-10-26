@@ -10,6 +10,8 @@ import {
   git,
   docker,
   mma,
+  savingpets,
+  sbm,
 } from '../assets';
 
 export const navLinks = [
@@ -79,16 +81,36 @@ const technologies = [
 
 const experiences = [
   {
-    title: 'React.js Developer',
-    company_name: 'Starbucks',
+    title: 'Full-stack Developer',
+    company_name: 'Ministério do Meio Ambiente',
     icon: mma,
-    iconBg: '#383E56',
-    date: 'March 2020 - April 2021',
+    iconBg: 'linear-gradient(128deg , #24A474, #015D08)',
+    date: 'September 2023 - At the moment',
     points: [
-      'Developing and maintaining web applications using React.js and other related technologies.',
-      'Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.',
+      'Developing and maintaining the geprod web system using Angular, Spring and other related technologies.',
       'Implementing responsive design and ensuring cross-browser compatibility.',
-      'Participating in code reviews and providing constructive feedback to other developers.',
+    ],
+  },
+  {
+    title: 'Full-stack Developer',
+    company_name: 'Saving Pets',
+    icon: savingpets,
+    iconBg: '#000',
+    date: 'July 2023 - At the moment',
+    points: [
+      'Developing and maintaining web applications using NextJS, NodeJS, Typescript, TailwindCSS and other related technologies.',
+      'Implementing responsive design and ensuring cross-browser compatibility.',
+    ],
+  },
+  {
+    title: 'Full-stack Developer',
+    company_name: 'Small Business Management',
+    icon: sbm,
+    iconBg: '#CE7A1B',
+    date: 'July 2022 - June 2023',
+    points: [
+      'Developing and maintaining web applications using NextJS, Typescript, Firebase, TailwindCSS and other related technologies.',
+      'Implementing responsive design and ensuring cross-browser compatibility.',
     ],
   },
 ];
