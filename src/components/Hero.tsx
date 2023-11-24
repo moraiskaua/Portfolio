@@ -1,7 +1,9 @@
+/* eslint-disable quotes */
 import { motion } from 'framer-motion';
 
 import { styles } from '../styles';
 import { ComputersCanvas } from './canvas';
+import { TypeAnimation } from 'react-type-animation';
 
 const Hero = () => {
   return (
@@ -19,7 +21,12 @@ const Hero = () => {
             Hi, I&apos;m <span className="text-[#915eff]">Kauã</span>
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-            And i&apos;m a Full-stack developer.
+            <TypeAnimation
+              sequence={[
+                "And i'm a Front-end",
+                "And i'm a Full-stack developer.",
+              ]}
+            />
           </p>
         </div>
       </div>
