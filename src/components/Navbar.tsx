@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-
+import { FaLinkedin } from 'react-icons/fa';
+import { FaGithubSquare } from 'react-icons/fa';
 import { styles } from '../styles';
 import { navLinks } from '../constants';
 import { logo, menu, close } from '../assets';
@@ -39,9 +40,47 @@ const Navbar = () => {
               <a href={`#${link.id}`}>{link.title}</a>
             </li>
           ))}
+          <div className="flex gap-x-3">
+            <FaLinkedin
+              size={28}
+              className="cursor-pointer transition-all duration-300 text-secondary hover:text-[#804dee] hover:scale-125"
+              onClick={() =>
+                window.open(
+                  'https://www.linkedin.com/in/kauamorais03/',
+                  '_blank',
+                )
+              }
+            />
+            <FaGithubSquare
+              size={28}
+              className="cursor-pointer transition-all duration-300 text-secondary hover:text-[#804dee] hover:scale-125"
+              onClick={() =>
+                window.open('https://github.com/moraiskaua', '_blank')
+              }
+            />
+          </div>
         </ul>
 
         <div className="sm:hidden flex flex-1 justify-end items-center">
+          <div className="flex gap-x-3 mr-5">
+            <FaLinkedin
+              size={25}
+              className="cursor-pointer transition-all duration-300 text-secondary hover:text-[#804dee] hover:scale-125"
+              onClick={() =>
+                window.open(
+                  'https://www.linkedin.com/in/kauamorais03/',
+                  '_blank',
+                )
+              }
+            />
+            <FaGithubSquare
+              size={25}
+              className="cursor-pointer transition-all duration-300 text-secondary hover:text-[#804dee] hover:scale-125"
+              onClick={() =>
+                window.open('https://github.com/moraiskaua', '_blank')
+              }
+            />
+          </div>
           <img
             src={toggleMenu ? close : menu}
             alt="menu"
