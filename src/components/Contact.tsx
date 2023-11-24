@@ -1,14 +1,16 @@
-import { useState, useRef } from 'react';
+import { useState } from 'react';
 import { motion } from 'framer-motion';
 import emailjs from '@emailjs/browser';
-
 import { styles } from '../styles';
 import { EarthCanvas } from './canvas';
 import { SectionWrapper } from '../hoc';
 import { slideIn } from '../utils/motion';
+import { toast } from 'react-toastify';
+import { useMediaQuery } from 'react-responsive';
 
 const Contact = () => {
-  const formRef = useRef();
+  const isMobile = useMediaQuery({ maxWidth: 767 });
+
   const [loading, setLoading] = useState(false);
   const [form, setForm] = useState({
     name: '',
@@ -25,9 +27,12 @@ const Contact = () => {
     e.preventDefault();
 
     if (!form.name || !form.email || !form.message) {
-      alert('Please fill out all fields.');
-      return;
+      return toast.warn('Please fill out all fields.', {
+        theme: 'dark',
+      });
     }
+
+    setLoading(true);
 
     emailjs
       .send(
@@ -42,18 +47,22 @@ const Contact = () => {
         },
         import.meta.env.VITE_PUBLIC_KEY,
       )
-      .then(
-        () => {
-          setLoading(false);
-          alert('Thank you. I will get back to you as soon as possible.');
-          setForm({ name: '', email: '', message: '' });
-        },
-        error => {
-          setLoading(false);
-          alert('Something went wrong. Please try again.');
-          console.error(error);
-        },
-      );
+      .then(() => {
+        setLoading(false);
+        toast.success(
+          'Thank you. I will get back to you as soon as possible.',
+          {
+            theme: 'dark',
+          },
+        );
+        setForm({ name: '', email: '', message: '' });
+      })
+      .catch(() => {
+        setLoading(false);
+        toast.error('Something went wrong. Please try again.', {
+          theme: 'dark',
+        });
+      });
   };
 
   return (
@@ -65,11 +74,7 @@ const Contact = () => {
         <p className={styles.sectionSubText}>Get in touch</p>
         <h3 className={styles.sectionHeadText}>Contact.</h3>
 
-        <form
-          ref={formRef}
-          onSubmit={handleSubmit}
-          className="mt-12 flex flex-col gap-8"
-        >
+        <form onSubmit={handleSubmit} className="mt-12 flex flex-col gap-8">
           <label className="flex flex-col">
             <span className="text-white font-medium mb-4">Your Name</span>
             <input
@@ -95,7 +100,7 @@ const Contact = () => {
           <label className="flex flex-col">
             <span className="text-white font-medium mb-4">Your Message</span>
             <textarea
-              rows="7"
+              rows={7}
               name="message"
               value={form.message}
               onChange={handleChange}
@@ -113,12 +118,14 @@ const Contact = () => {
         </form>
       </motion.div>
 
-      <motion.div
-        variants={slideIn('right', 'tween', 0.2, 1)}
-        className="xl:flex-1 xl:h-auto md:h-[550px] h-[350px]"
-      >
-        <EarthCanvas />
-      </motion.div>
+      {isMobile ? null : (
+        <motion.div
+          variants={slideIn('right', 'tween', 0.2, 1)}
+          className="xl:flex-1 xl:h-auto md:h-[550px] h-[350px]"
+        >
+          <EarthCanvas />
+        </motion.div>
+      )}
     </div>
   );
 };

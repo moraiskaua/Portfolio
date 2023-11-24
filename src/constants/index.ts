@@ -159,23 +159,23 @@ const testimonials = [
 const projects = [
   {
     name: 'Saving Pets',
-    description: 'Web system to help report animal abuse.',
+    description: 'Web system to contact the saving pets team.',
     tags: [
       {
         name: 'NextJS',
         color: 'blue-text-gradient',
       },
       {
-        name: 'NodeJS',
-        color: 'green-text-gradient',
+        name: 'NestJS',
+        color: 'pink-text-gradient',
       },
       {
         name: 'TailwindCSS',
-        color: 'pink-text-gradient',
+        color: 'green-text-gradient',
       },
     ],
     image: savingpets,
-    source_code_link: 'https://github.com/moraiskaua/front-end-saving-pets',
+    source_code_link: 'https://saving-pets.vercel.app',
   },
   {
     name: 'Dev Lanchar',
@@ -187,15 +187,15 @@ const projects = [
       },
       {
         name: 'NodeJS',
-        color: 'green-text-gradient',
+        color: 'pink-text-gradient',
       },
       {
         name: 'TailwindCSS',
-        color: 'pink-text-gradient',
+        color: 'green-text-gradient',
       },
     ],
     image: devlanchar,
-    source_code_link: 'https://github.com/moraiskaua/front-end-devLanchar',
+    source_code_link: 'https://front-end-dev-lanchar.vercel.app',
   },
   {
     name: 'Admin Template',
@@ -207,31 +207,15 @@ const projects = [
       },
       {
         name: 'Firebase',
-        color: 'green-text-gradient',
+        color: 'pink-text-gradient',
       },
       {
         name: 'TailwindCSS',
-        color: 'pink-text-gradient',
-      },
-    ],
-    image: admintemplate,
-    source_code_link: 'https://github.com/moraiskaua/next-adminTemplate',
-  },
-  {
-    name: 'Quiz NextJS',
-    description: 'Quiz about NextJS.',
-    tags: [
-      {
-        name: 'NextJS',
-        color: 'blue-text-gradient',
-      },
-      {
-        name: 'Typescript',
         color: 'green-text-gradient',
       },
     ],
-    image: quiznext,
-    source_code_link: 'https://github.com/moraiskaua/next-quiz',
+    image: admintemplate,
+    source_code_link: 'https://moraiskaua-next-admintemplate.vercel.app/login',
   },
   {
     name: 'Netflix Clone',
@@ -247,7 +231,7 @@ const projects = [
       },
     ],
     image: clonenetflix,
-    source_code_link: 'https://github.com/moraiskaua/react-netflixClone',
+    source_code_link: 'https://moraiskaua-netflix-clone.netlify.app',
   },
 ];
 
