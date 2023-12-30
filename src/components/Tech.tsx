@@ -6,7 +6,13 @@ import { technologies } from '../constants';
 import { SectionWrapper } from '../hoc';
 import { fadeIn } from '../utils/motion';
 
-const TechCard = ({ index, name, icon }) => (
+interface TechCardProps {
+  index: number;
+  name: string;
+  icon: string;
+}
+
+const TechCard = ({ index, name, icon }: TechCardProps) => (
   <Tilt
     options={{ max: 45, scale: 1, speed: 450 }}
     className="xs:w-[235px] w-full"
