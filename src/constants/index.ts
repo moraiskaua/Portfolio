@@ -242,15 +242,15 @@ const projects = [
     tags: [
       {
         name: 'NextJS',
-        color: 'blue-text-gradient',
+        color: 'text-gray-400',
       },
       {
         name: 'NodeJS',
-        color: 'pink-text-gradient',
+        color: 'green-text-gradient',
       },
       {
         name: 'TailwindCSS',
-        color: 'green-text-gradient',
+        color: 'blue-text-gradient',
       },
     ],
     image: devlanchar,
@@ -263,15 +263,15 @@ const projects = [
     tags: [
       {
         name: 'NextJS',
-        color: 'blue-text-gradient',
+        color: 'text-gray-400',
       },
       {
         name: 'Firebase',
-        color: 'pink-text-gradient',
+        color: 'green-text-gradient',
       },
       {
         name: 'TailwindCSS',
-        color: 'green-text-gradient',
+        color: 'blue-text-gradient',
       },
     ],
     image: admintemplate,
