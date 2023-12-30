@@ -36,7 +36,7 @@ const TechCard = ({ index, name, icon }: TechCardProps) => (
 
 const Tech = () => {
   return (
-    <div className="flex flex-row flex-wrap justify-center gap-4">
+    <div className="flex flex-row flex-wrap justify-center gap-4 md:gap-10">
       <div>
         <p className={`${styles.sectionSubText}`}>Some technologies</p>
         <h2 className={`${styles.sectionHeadText}`}>That I&apos;m used to.</h2>
