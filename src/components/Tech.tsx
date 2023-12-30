@@ -21,7 +21,7 @@ const TechCard = ({ index, name, icon }: TechCardProps) => (
       variants={fadeIn('right', 'spring', index * 0.5, 0.75)}
       className="w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card"
     >
-      <div className="bg-tertiary rounded-[20px] py-5 px-12 min-h-[235px] md:min-h-[175px] flex justify-evenly items-center flex-col">
+      <div className="bg-tertiary rounded-[20px] py-5 px-12min-h-[175px] flex justify-evenly items-center flex-col">
         <img
           src={icon}
           alt="web-development"
@@ -36,7 +36,7 @@ const TechCard = ({ index, name, icon }: TechCardProps) => (
 
 const Tech = () => {
   return (
-    <div className="flex flex-row flex-wrap justify-center gap-10">
+    <div className="flex flex-row flex-wrap justify-center gap-4">
       <div>
         <p className={`${styles.sectionSubText}`}>Some technologies</p>
         <h2 className={`${styles.sectionHeadText}`}>That I&apos;m used to.</h2>
