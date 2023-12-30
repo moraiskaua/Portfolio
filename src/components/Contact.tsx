@@ -43,7 +43,7 @@ const Contact = () => {
           from_email: form.email,
           message: form.message,
           to_name: 'Kauã Morais',
-          to_email: 'moraiskaua03@gmail.com',
+          to_email: 'moraiskaua.dev@gmail.com',
         },
         import.meta.env.VITE_PUBLIC_KEY,
       )

@@ -6,18 +6,24 @@ import {
   reactjs,
   nextjs,
   tailwind,
+  nestjs,
   nodejs,
   postgres,
+  mongodb,
+  prisma,
   git,
   docker,
+  jestjs,
+  styledComponents,
   mma,
   savingpetsLogo,
   sbm,
-  devlanchar,
   admintemplate,
-  quiznext,
+  devlanchar,
   clonenetflix,
   savingpets,
+  devMessage,
+  biofit,
 } from '../assets';
 
 export const navLinks = [
@@ -60,8 +66,12 @@ const technologies = [
     icon: nextjs,
   },
   {
-    name: 'React JS',
+    name: 'React Native',
     icon: reactjs,
+  },
+  {
+    name: 'NestJS',
+    icon: nestjs,
   },
   {
     name: 'Node JS',
@@ -84,12 +94,28 @@ const technologies = [
     icon: postgres,
   },
   {
-    name: 'git',
+    name: 'MongoDB',
+    icon: mongodb,
+  },
+  {
+    name: 'Prisma',
+    icon: prisma,
+  },
+  {
+    name: 'Git',
     icon: git,
   },
   {
-    name: 'docker',
+    name: 'Docker',
     icon: docker,
+  },
+  {
+    name: 'Jest',
+    icon: jestjs,
+  },
+  {
+    name: 'Styled Components',
+    icon: styledComponents,
   },
 ];
 
@@ -129,41 +155,56 @@ const experiences = [
   },
 ];
 
-const testimonials = [
-  {
-    testimonial:
-      'I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.',
-    name: 'Sara Lee',
-    designation: 'CFO',
-    company: 'Acme Co',
-    image: 'https://randomuser.me/api/portraits/women/4.jpg',
-  },
-  {
-    testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: 'Chris Brown',
-    designation: 'COO',
-    company: 'DEF Corp',
-    image: 'https://randomuser.me/api/portraits/men/5.jpg',
-  },
-  {
-    testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: 'Lisa Wang',
-    designation: 'CTO',
-    company: '456 Enterprises',
-    image: 'https://randomuser.me/api/portraits/women/6.jpg',
-  },
-];
-
 const projects = [
+  {
+    name: 'DevMessage',
+    description: 'Real-time web messenger.',
+    tags: [
+      {
+        name: 'NextJS',
+        color: 'text-gray-400',
+      },
+      {
+        name: 'MongoDB',
+        color: 'green-text-gradient',
+      },
+      {
+        name: 'TailwindCSS',
+        color: 'blue-text-gradient',
+      },
+    ],
+    image: devMessage,
+    link: 'https://dev-message.vercel.app',
+    source_code_link: 'https://github.com/moraiskaua/DevMessage',
+  },
+  {
+    name: 'Biofit',
+    description: 'Landing page for biofit gym',
+    tags: [
+      {
+        name: 'NextJS',
+        color: 'text-gray-400',
+      },
+      {
+        name: 'Typescript',
+        color: 'green-text-gradient',
+      },
+      {
+        name: 'TailwindCSS',
+        color: 'blue-text-gradient',
+      },
+    ],
+    image: biofit,
+    link: 'https://biofit-theta.vercel.app',
+    source_code_link: 'https://github.com/moraiskaua/Biofit',
+  },
   {
     name: 'Saving Pets',
     description: 'Web system to contact the saving pets team.',
     tags: [
       {
         name: 'NextJS',
-        color: 'blue-text-gradient',
+        color: 'text-gray-400',
       },
       {
         name: 'NestJS',
@@ -171,11 +212,29 @@ const projects = [
       },
       {
         name: 'TailwindCSS',
-        color: 'green-text-gradient',
+        color: 'blue-text-gradient',
       },
     ],
     image: savingpets,
-    source_code_link: 'https://saving-pets.vercel.app',
+    link: 'https://saving-pets.vercel.app',
+    source_code_link: 'https://github.com/moraiskaua/front-end-saving-pets',
+  },
+  {
+    name: 'Netflix Clone',
+    description: 'Netflix home page clone.',
+    tags: [
+      {
+        name: 'ReactJS',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'Typescript',
+        color: 'green-text-gradient',
+      },
+    ],
+    image: clonenetflix,
+    link: 'https://moraiskaua-netflix-clone.netlify.app',
+    source_code_link: 'https://github.com/moraiskaua/Netflix-Clone',
   },
   {
     name: 'Dev Lanchar',
@@ -195,7 +254,8 @@ const projects = [
       },
     ],
     image: devlanchar,
-    source_code_link: 'https://front-end-dev-lanchar.vercel.app',
+    link: 'https://front-end-dev-lanchar.vercel.app',
+    source_code_link: 'https://github.com/moraiskaua/front-end-devLanchar',
   },
   {
     name: 'Admin Template',
@@ -215,24 +275,9 @@ const projects = [
       },
     ],
     image: admintemplate,
-    source_code_link: 'https://moraiskaua-next-admintemplate.vercel.app/login',
-  },
-  {
-    name: 'Netflix Clone',
-    description: 'Netflix home page clone.',
-    tags: [
-      {
-        name: 'ReactJS',
-        color: 'blue-text-gradient',
-      },
-      {
-        name: 'Typescript',
-        color: 'green-text-gradient',
-      },
-    ],
-    image: clonenetflix,
-    source_code_link: 'https://moraiskaua-netflix-clone.netlify.app',
+    link: 'https://moraiskaua-next-admintemplate.vercel.app/login',
+    source_code_link: 'https://front-end-dev-lanchar.vercel.app',
   },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+export { services, technologies, experiences, projects };

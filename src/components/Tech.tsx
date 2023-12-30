@@ -8,14 +8,14 @@ import { fadeIn } from '../utils/motion';
 
 const TechCard = ({ index, name, icon }) => (
   <Tilt
-    options={{ max: 45, scale: 1, speed: 450 }} // Use as propriedades diretamente aqui
+    options={{ max: 45, scale: 1, speed: 450 }}
     className="xs:w-[235px] w-full"
   >
     <motion.div
       variants={fadeIn('right', 'spring', index * 0.5, 0.75)}
       className="w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card"
     >
-      <div className="bg-tertiary rounded-[20px] py-5 px-12 min-h-[235px] flex justify-evenly items-center flex-col">
+      <div className="bg-tertiary rounded-[20px] py-5 px-12 min-h-[175px] flex justify-evenly items-center flex-col">
         <img
           src={icon}
           alt="web-development"
