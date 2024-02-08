@@ -21,6 +21,7 @@ import {
   admintemplate,
   devlanchar,
   clonenetflix,
+  chordio,
   savingpets,
   devMessage,
   biofit,
@@ -157,8 +158,8 @@ const experiences = [
 
 const projects = [
   {
-    name: 'DevMessage',
-    description: 'Real-time web messenger.',
+    name: 'Chord.io',
+    description: `Listen and guess the chord of the day.`,
     tags: [
       {
         name: 'NextJS',
@@ -173,9 +174,30 @@ const projects = [
         color: 'blue-text-gradient',
       },
     ],
-    image: devMessage,
-    link: 'https://dev-message.vercel.app',
-    source_code_link: 'https://github.com/moraiskaua/DevMessage',
+    image: chordio,
+    link: 'https://chord-io.netlify.app',
+    source_code_link: 'https://github.com/moraiskaua/Chord.io',
+  },
+  {
+    name: 'Saving Pets',
+    description: 'Web system to contact the saving pets team.',
+    tags: [
+      {
+        name: 'NextJS',
+        color: 'text-gray-400',
+      },
+      {
+        name: 'NestJS',
+        color: 'pink-text-gradient',
+      },
+      {
+        name: 'TailwindCSS',
+        color: 'blue-text-gradient',
+      },
+    ],
+    image: savingpets,
+    link: 'https://saving-pets.vercel.app',
+    source_code_link: 'https://github.com/moraiskaua/front-end-saving-pets',
   },
   {
     name: 'Biofit',
@@ -199,25 +221,25 @@ const projects = [
     source_code_link: 'https://github.com/moraiskaua/Biofit',
   },
   {
-    name: 'Saving Pets',
-    description: 'Web system to contact the saving pets team.',
+    name: 'DevMessage',
+    description: 'Real-time web messenger.',
     tags: [
       {
         name: 'NextJS',
         color: 'text-gray-400',
       },
       {
-        name: 'NestJS',
-        color: 'pink-text-gradient',
+        name: 'MongoDB',
+        color: 'green-text-gradient',
       },
       {
         name: 'TailwindCSS',
         color: 'blue-text-gradient',
       },
     ],
-    image: savingpets,
-    link: 'https://saving-pets.vercel.app',
-    source_code_link: 'https://github.com/moraiskaua/front-end-saving-pets',
+    image: devMessage,
+    link: 'https://dev-message.vercel.app',
+    source_code_link: 'https://github.com/moraiskaua/DevMessage',
   },
   {
     name: 'Netflix Clone',
@@ -256,27 +278,6 @@ const projects = [
     image: devlanchar,
     link: 'https://front-end-dev-lanchar.vercel.app',
     source_code_link: 'https://github.com/moraiskaua/front-end-devLanchar',
-  },
-  {
-    name: 'Admin Template',
-    description: 'Admin panel example web system.',
-    tags: [
-      {
-        name: 'NextJS',
-        color: 'text-gray-400',
-      },
-      {
-        name: 'Firebase',
-        color: 'green-text-gradient',
-      },
-      {
-        name: 'TailwindCSS',
-        color: 'blue-text-gradient',
-      },
-    ],
-    image: admintemplate,
-    link: 'https://moraiskaua-next-admintemplate.vercel.app/login',
-    source_code_link: 'https://front-end-dev-lanchar.vercel.app',
   },
 ];
 

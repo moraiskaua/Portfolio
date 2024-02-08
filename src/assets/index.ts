@@ -26,6 +26,7 @@ import sbm from './company/sbm.png';
 import devlanchar from './project/devlanchar.png';
 import admintemplate from './project/admintemplate.png';
 import clonenetflix from './project/clonenetflix.png';
+import chordio from './project/chord-io.jpg';
 import savingpets from './project/savingpets.jpeg';
 import devMessage from './project/dev-message.png';
 import biofit from './project/biofit.png';
@@ -56,6 +57,7 @@ export {
   devlanchar,
   admintemplate,
   clonenetflix,
+  chordio,
   savingpets,
   devMessage,
   biofit,
