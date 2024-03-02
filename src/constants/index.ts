@@ -138,7 +138,7 @@ const experiences = [
     iconBg: '#000',
     date: 'July 2023 - At the moment',
     points: [
-      'Developing and maintaining web applications using NextJS, NodeJS, Typescript, TailwindCSS and other related technologies.',
+      'Developing and maintaining web applications using NextJS, NestJS, Typescript, TailwindCSS and other related technologies.',
       'Implementing responsive design and ensuring cross-browser compatibility.',
     ],
   },
