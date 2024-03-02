@@ -23,9 +23,8 @@ import mma from './company/mma.jpg';
 import savingpetsLogo from './company/savingpets.svg';
 import sbm from './company/sbm.png';
 
-import devlanchar from './project/devlanchar.png';
-import admintemplate from './project/admintemplate.png';
-import clonenetflix from './project/clonenetflix.png';
+import snackbyte from './project/snackbyte.jpg';
+import deveconomy from './project/deveconomy.jpg';
 import chordio from './project/chord-io.jpg';
 import savingpets from './project/savingpets.jpeg';
 import devMessage from './project/dev-message.png';
@@ -54,9 +53,8 @@ export {
   mma,
   savingpetsLogo,
   sbm,
-  devlanchar,
-  admintemplate,
-  clonenetflix,
+  snackbyte,
+  deveconomy,
   chordio,
   savingpets,
   devMessage,

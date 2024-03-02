@@ -18,9 +18,8 @@ import {
   mma,
   savingpetsLogo,
   sbm,
-  admintemplate,
-  devlanchar,
-  clonenetflix,
+  deveconomy,
+  snackbyte,
   chordio,
   savingpets,
   devMessage,
@@ -91,7 +90,7 @@ const technologies = [
     icon: tailwind,
   },
   {
-    name: 'Postgres SQL',
+    name: 'PostgreSQL',
     icon: postgres,
   },
   {
@@ -221,6 +220,48 @@ const projects = [
     source_code_link: 'https://github.com/moraiskaua/Biofit',
   },
   {
+    name: 'DevEconomy',
+    description: 'Manage your personal finances.',
+    tags: [
+      {
+        name: 'ReactJS',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'NestJS',
+        color: 'pink-text-gradient',
+      },
+      {
+        name: 'PostgreSQL',
+        color: 'green-text-gradient',
+      },
+    ],
+    image: deveconomy,
+    link: 'https://dev-economy.vercel.app',
+    source_code_link: 'https://github.com/moraiskaua/front-end-DevEconomy',
+  },
+  {
+    name: 'SnackByte',
+    description: 'Web system to manage a cafeteria.',
+    tags: [
+      {
+        name: 'ReactJS',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'NodeJS',
+        color: 'green-text-gradient',
+      },
+      {
+        name: 'TailwindCSS',
+        color: 'text-gray-400',
+      },
+    ],
+    image: snackbyte,
+    link: 'https://snackbyte.vercel.app',
+    source_code_link: 'https://github.com/moraiskaua/front-end-SnackByte',
+  },
+  {
     name: 'DevMessage',
     description: 'Real-time web messenger.',
     tags: [
@@ -240,44 +281,6 @@ const projects = [
     image: devMessage,
     link: 'https://dev-message.vercel.app',
     source_code_link: 'https://github.com/moraiskaua/DevMessage',
-  },
-  {
-    name: 'Netflix Clone',
-    description: 'Netflix home page clone.',
-    tags: [
-      {
-        name: 'ReactJS',
-        color: 'blue-text-gradient',
-      },
-      {
-        name: 'Typescript',
-        color: 'green-text-gradient',
-      },
-    ],
-    image: clonenetflix,
-    link: 'https://moraiskaua-netflix-clone.netlify.app',
-    source_code_link: 'https://github.com/moraiskaua/Netflix-Clone',
-  },
-  {
-    name: 'Dev Lanchar',
-    description: 'Web system to manage a cafeteria.',
-    tags: [
-      {
-        name: 'NextJS',
-        color: 'text-gray-400',
-      },
-      {
-        name: 'NodeJS',
-        color: 'green-text-gradient',
-      },
-      {
-        name: 'TailwindCSS',
-        color: 'blue-text-gradient',
-      },
-    ],
-    image: devlanchar,
-    link: 'https://front-end-dev-lanchar.vercel.app',
-    source_code_link: 'https://github.com/moraiskaua/front-end-devLanchar',
   },
 ];
 
